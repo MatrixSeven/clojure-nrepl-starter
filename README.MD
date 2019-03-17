@@ -45,5 +45,5 @@ clojure.nrepl.mode=dev,test
 #### 然后尝试使用它.
 ![](3.png)
 
-
 ## Enjoy it!
+* 一个emacs配置文件 [https://github.com/MatrixSeven/SEmacs](https://github.com/MatrixSeven/SEmacs)

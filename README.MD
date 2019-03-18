@@ -33,8 +33,13 @@ clojure.nrepl.state=true
 clojure.nrepl.port=7888
 #仅在以下环境中启动,默认为dev,优先级高于state
 clojure.nrepl.mode=dev,test
-
 ```
+
+### 使用场景
+某日你突然要临时发几条`kafka/mq`消息又或者热加载某个`bean`后需要调用某个方法测试,以前可能要写个`Test`用例或者`web`项目调用下接口等等.那么现在so easy,无论是本地还是跑在测试线的环境,只要您开启了`nrepl`服务,你就可以直接连接上去,干你想干的事情,直接发消息/调用某个方法而不要重启/发布你的项目.
+
+
+
 ### eg:
 #### 直接emacs中启动nrepl链接
 ![](1.png)

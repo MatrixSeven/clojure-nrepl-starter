@@ -52,3 +52,4 @@ clojure.nrepl.mode=dev,test
 
 ## Enjoy it!
 * 一个emacs配置文件 [https://github.com/MatrixSeven/SEmacs](https://github.com/MatrixSeven/SEmacs)
+* 吾爱Java(QQ群):[170936712（点击加入）](https://link.zhihu.com/?target=https%3A//jq.qq.com/%3F_wv%3D1027%26k%3D41oCCMn)

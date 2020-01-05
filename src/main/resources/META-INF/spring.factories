@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.spring.repl.StarterAutoConfigure
+repl.config.StarterAutoConfigure

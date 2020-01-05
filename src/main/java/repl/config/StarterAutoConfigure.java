@@ -1,4 +1,4 @@
-package com.spring.repl;
+package repl.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -6,6 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
+import repl.R;
 
 
 //=======================================================
@@ -43,8 +44,8 @@ public class StarterAutoConfigure  {
     private ApplicationContext applicationContext;
 
     @Bean(initMethod="init")
-    public ClojureServices starterService (){
-        return new ClojureServices(properties,applicationContext,env);
+    public R starterService (){
+        return new R(properties, applicationContext, env);
     }
 
 

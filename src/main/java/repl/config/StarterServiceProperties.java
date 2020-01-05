@@ -1,8 +1,8 @@
-package com.spring.repl;
+package repl.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.List;
 
 //=======================================================
@@ -28,14 +28,18 @@ import java.util.List;
  */
 @ConfigurationProperties(prefix = "clojure.nrepl")
 public class StarterServiceProperties {
-    private boolean state=false;
-    private Integer port=7888;
-    private List<String> mode= Collections.singletonList("dev");
+    private boolean state = true;
+    private Integer port = 7888;
+    private List<String> mode = Arrays.asList("dev","test");
 
 
-    public Integer getPort() { return port; }
+    public Integer getPort() {
+        return port;
+    }
 
-    public void setPort(Integer port) { this.port = port; }
+    public void setPort(Integer port) {
+        this.port = port;
+    }
 
     public boolean getState() {
         return state;
@@ -55,10 +59,6 @@ public class StarterServiceProperties {
 
     @Override
     public String toString() {
-        return "StarterServiceProperties{" +
-                "state=" + state +
-                ", port=" + port +
-                ", mode=" + mode +
-                '}';
+        return "StarterServiceProperties{" + "state=" + state + ", port=" + port + ", mode=" + mode + '}';
     }
 }

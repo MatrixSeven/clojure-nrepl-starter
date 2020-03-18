@@ -41,6 +41,9 @@ clojure.nrepl.mode=dev,test
 
 
 ### eg:
+#### 体验
+![](clojure.gif)
+
 #### 直接emacs中启动nrepl链接
 ![](1.png)
 
